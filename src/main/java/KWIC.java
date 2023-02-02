@@ -1,6 +1,8 @@
 public class KWIC {
-
-    public void execute(String file) {
+    public static void main(String[] args) {
+        execute("testing file\nwith line breaks\nfor OOP assignment");
+    }
+    public static void execute(String file) {
         LineStorage lines = new LineStorage();
         Input input = new Input();
         CircularShifter shifter = new CircularShifter();
