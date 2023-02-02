@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class CircularShifter {
     ArrayList<String[]> shiftedLines;
     public void setup(LineStorage lines) {
-        shiftedLines = new ArrayList<String[]>();
+        shiftedLines = new ArrayList<>();
         for (String line: lines.lines){
             String[] lineWords = line.split(" ");
             for (int i = 0; i < lineWords.length; i++) {
