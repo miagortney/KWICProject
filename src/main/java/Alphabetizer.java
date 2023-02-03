@@ -1,9 +1,19 @@
 import java.util.ArrayList;
 
+/**
+ * Class that handles alphabetizing lines
+ */
 public class Alphabetizer {
 
     ArrayList<String[]> alphabetizedLines = new ArrayList<>();
 
+    /**
+     * Compare two strings character by character
+     * @param s1 the first string to be compared
+     * @param s2 the second string to be compared
+     * @return true or false based on if the first string is greater than
+     * the second string
+     */
     public boolean compareStrings(String s1, String s2) {
 
         boolean comparison = true;
@@ -21,8 +31,11 @@ public class Alphabetizer {
         return greater;
     }
 
+    /**
+     * Sort shifted lines in alphabetical order
+     * @param shifter CircularShifter object that holds shifted lines
+     */
     public void alpha(CircularShifter shifter) {
-
 
         ArrayList<String[]> lines = shifter.shiftedLines;
         String[] temp;
