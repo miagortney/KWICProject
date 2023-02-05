@@ -11,7 +11,7 @@ public class Input {
     /**
      * Parses input into lines to store in LineStorage
      * 
-     * @param file  string to parse
+     * @param file  file to parse
      * @param lines LineStorage object to store parsed lines
      */
     public void parse(String file, LineStorage lines) throws FileNotFoundException {
