@@ -1,8 +1,10 @@
+import java.io.FileNotFoundException;
+
 public class KWIC {
-    public static void main(String[] args) {
-        execute("testing file\nwith line breaks\nfor OOP assignment");
+    public static void main(String[] args) throws FileNotFoundException {
+        execute("C:\\Users\\Nana\\Documents\\Baylor\\Courses\\OOP\\Week 3\\KWIC\\KWICProject\\src\\main\\java\\a.txt");
     }
-    public static void execute(String file) {
+    public static void execute(String file) throws FileNotFoundException {
         LineStorage lines = new LineStorage();
         Input input = new Input();
         CircularShifter shifter = new CircularShifter();
