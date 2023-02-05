@@ -19,13 +19,29 @@ public class Alphabetizer {
         boolean comparison = true;
         boolean greater = false;
         int i = 0;
+
+        if (s1.equals(s2)) {
+            comparison = false;
+        }
+
         while (comparison) {
+
             if (s1.toLowerCase().charAt(i) > s2.toLowerCase().charAt(i)) {
                 greater = true;
                 comparison = false;
             } else if (s1.toLowerCase().charAt(i) < s2.toLowerCase().charAt(i)) {
                 comparison = false;
             }
+
+            if (i == s1.length() - 1 || i == s2.length() - 1) {
+                if (s1.length() > s2.length()) {
+                    greater = true;
+                    comparison = false;
+                } else if (s1.length() < s2.length()) {
+                    comparison = false;
+                }
+            }
+
             i++;
         }
         return greater;
