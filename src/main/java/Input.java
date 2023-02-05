@@ -21,5 +21,7 @@ public class Input {
         lines.lines = new ArrayList<String>();
         while (sc.hasNextLine())
             lines.lines.add(sc.nextLine());
+
+        sc.close();
     }
 }
